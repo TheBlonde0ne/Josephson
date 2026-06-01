@@ -1,0 +1,124 @@
+\section{Einleitung und Historischer Überblick}
+Die Entdeckung der Supraleitung durch Heike Kamerlingh Onnes im Jahr 1911 markiert einen der fundamentalsten Meilensteine der Festkörperphysik. Bei der Untersuchung von Quecksilber stellte er fest, dass der elektrische Widerstand unterhalb einer kritischen Temperatur $T_c$ abrupt auf einen unmessbar kleinen Wert abfällt. Ein Supraleiter ist jedoch nicht nur ein idealer Leiter ($R = 0$). Wie Walther Meißner und Robert Ochsenfeld 1933 zeigten, verhält sich ein Supraleiter im Inneren auch als idealer Diamagnet ($\chi = -1$), der ein von außen angelegtes Magnetfeld vollständig aus seinem Inneren verdrängt (Meissner-Ochsenfeld-Effekt). 
+
+Die mikroskopische Erklärung dieses makroskopischen Quantenphänomens gelang erst 1957 durch John Bardeen, Leon Cooper und Robert Schrieffer (BCS-Theorie). 1962 postulierte Brian D. Josephson schließlich theoretisch, dass supraleitende Ladungsträger (Cooper-Paare) durch eine dünne isolierende Barriere tunneln können, was zur Entdeckung der nach ihm benannten Josephson-Effekte führte. Dieser Versuch widmet sich der experimentellen Untersuchung dieser Effekte an einer Niob-basierten Josephson-Struktur.
+
+\section{Phänomenologische und Mikroskopische Theorie}
+
+\subsection{Meissner-Ochsenfeld-Effekt und London-Theorie}
+Die phänomenologische Beschreibung der Supraleitung wurde 1935 von den Brüdern Fritz und Heinz London formuliert. Ausgehend von der Annahme, dass die supraleitenden Elektronen (Dichte $n_s$, Masse $m$, Ladung $-e$) reibungsfrei beschleunigt werden, lautet die Bewegungsgleichung $m \dot{\vec{v}} = -e \vec{E}$. Mit der Suprastromdichte $\vec{j}_s = -e n_s \vec{v}$ folgt die \textbf{erste London-Gleichung}:
+\begin{equation}
+    \frac{\partial \vec{j}_s}{\partial t} = \frac{n_s e^2}{m} \vec{E}
+\end{equation}
+Durch Anwendung der Rotation und Einsetzen des Induktionsgesetzes $\nabla \times \vec{E} = -\dot{\vec{B}}$ erhält man nach zeitlicher Integration die \textbf{zweite London-Gleichung}, welche den Meissner-Ochsenfeld-Effekt beschreibt:
+\begin{equation}
+    \nabla \times \vec{j}_s = -\frac{n_s e^2}{m} \vec{B}
+\end{equation}
+Kombiniert man dies mit dem Ampèreschen Gesetz $\nabla \times \vec{B} = \mu_0 \vec{j}_s$, ergibt sich die Differentialgleichung $\nabla^2 \vec{B} = \frac{1}{\lambda_L^2} \vec{B}$. Die charakteristische Längenskala, auf der ein Magnetfeld exponentiell in den Supraleiter eindringt, ist die \textbf{London-Eindringtiefe}:
+\begin{equation}
+    \lambda_L = \sqrt{\frac{m}{\mu_0 n_s e^2}}
+\end{equation}
+
+\subsection{Flussquantisierung}
+Der supraleitende Zustand lässt sich durch eine makroskopische Wellenfunktion $\Psi(\vec{r}) = \sqrt{n_s(\vec{r})} e^{i\theta(\vec{r})}$ beschreiben. Der quantenmechanische Stromdichteoperator liefert für die Suprastromdichte:
+\begin{equation}
+    \vec{j}_s = \frac{n_s q}{m} (\hbar \nabla \theta - q \vec{A})
+\end{equation}
+wobei $q = -2e$ die Ladung eines Cooper-Paares ist. Tief im Inneren eines massiven Supraleiters verschwindet die Stromdichte ($\vec{j}_s = 0$). Integriert man entlang eines geschlossenen Weges tief im Supraleiter, der einen nicht-supraleitenden Bereich (z.B. ein Loch) umschließt, folgt $\hbar \oint \nabla \theta \cdot d\vec{l} = q \oint \vec{A} \cdot d\vec{l}$. Da die Wellenfunktion eindeutig sein muss, gilt $\oint \nabla \theta \cdot d\vec{l} = 2\pi n$ mit $n \in \mathbb{Z}$. Mit dem Stokesschen Satz $\oint \vec{A} \cdot d\vec{l} = \int \vec{B} \cdot d\vec{S} = \Phi$ folgt die Quantisierung des magnetischen Flusses:
+\begin{equation}
+    \Phi = n \frac{h}{2e} = n \Phi_0
+\end{equation}
+mit dem magnetischen Flussquant $\Phi_0 \approx \SI{2.068e-15}{\weber}$.
+
+\subsection{BCS-Theorie und die Energielücke}
+Nach der BCS-Theorie bilden Elektronen mit entgegengesetztem Impuls und Spin $(\vec{k}\uparrow, -\vec{k}\downarrow)$ aufgrund einer schwachen, durch Phononen vermittelten anziehenden Wechselwirkung gebundene Zustände, die Cooper-Paare. Da diese einen Gesamtspin von $S=0$ besitzen, verhalten sie sich als Bosonen und kondensieren in einen makroskopischen Grundzustand. 
+
+Um ein Cooper-Paar aufzubrechen, muss die Bindungsenergie $2\Delta$ aufgewendet werden. Das Anregungsspektrum der Quasiteilchen weist daher eine Energielücke (Gap) der Breite $2\Delta$ um die Fermi-Energie auf. Die BCS-Zustandsdichte der Quasiteilchen divergiert an den Rändern der Energielücke:
+\begin{equation}
+    D_S(E) = D_N(E_F) \frac{|E|}{\sqrt{E^2 - \Delta^2}} \quad \text{für } |E| > \Delta
+\end{equation}
+Die Energielücke ist stark temperaturabhängig. Für $T \to 0$ gilt $2\Delta(0) \approx 3.52 k_B T_c$. In der Nähe der kritischen Temperatur $T_c$ (für Niob $T_c \approx \SI{9.2}{\kelvin}$) fällt die Energielücke steil ab:
+\begin{equation}
+    \Delta(T) \approx 1.74 \Delta(0) \sqrt{1 - \frac{T}{T_c}}
+\end{equation}
+\textit{Experimenteller Hinweis:} Aufgrund dieses wurzelförmigen Verhaltens ändert sich $\Delta(T)$ nahe $T_c$ extrem schnell. Um den Verlauf der $\Delta(T)$-Kurve im Experiment präzise zu erfassen, müssen die Messpunkte (eingestellt über den \SI{3}{\watt}-Heizwiderstand) nahe $T_c$ deutlich dichter gewählt werden als bei tiefen Temperaturen.
+
+\section{Tunnelprozesse und Josephson-Effekte}
+
+\subsection{Quasiteilchen-Tunneln (SIS, NIS, NIN)}
+Trennt man zwei Metalle durch eine dünne Isolatorschicht ($d \approx \SI{1}{\nano\meter}$ bis \SI{3}{\nano\meter}), können Elektronen quantenmechanisch tunneln. 
+\begin{itemize}
+    \item \textbf{NIN (Normalleiter-Isolator-Normalleiter):} Es ergibt sich ein lineares Ohmsches Verhalten $I \propto V$.
+    \item \textbf{NIS (Normalleiter-Isolator-Supraleiter):} Bei $T=0$ fließt kein Strom, bis die Spannung $V = \Delta/e$ erreicht, da vorher keine freien Zustände zur Verfügung stehen.
+    \item \textbf{SIS (Supraleiter-Isolator-Supraleiter):} Bei $T=0$ setzt der Tunnelstrom erst bei $V = 2\Delta/e$ abrupt ein. Bei endlichen Temperaturen ($T > 0$) existiert ein kleiner thermischer Leckstrom für $V < 2\Delta/e$.
+\end{itemize}
+
+\subsection{Die Josephson-Gleichungen}
+Zusätzlich zu den Quasiteilchen können auch intakte Cooper-Paare durch die Barriere tunneln. Nach einem Modell von Feynman lässt sich dies durch zwei schwach gekoppelte makroskopische Wellenfunktionen $\Psi_1$ und $\Psi_2$ beschreiben:
+\begin{equation}
+    i\hbar \frac{\partial \Psi_1}{\partial t} = E_1 \Psi_1 + K \Psi_2 \quad \text{und} \quad i\hbar \frac{\partial \Psi_2}{\partial t} = E_2 \Psi_2 + K \Psi_1
+\end{equation}
+wobei $K$ die Kopplungskonstante der Barriere ist. Mit dem Ansatz $\Psi_{1,2} = \sqrt{n_{1,2}} e^{i\theta_{1,2}}$ und der Phasendifferenz $\varphi = \theta_2 - \theta_1$ erhält man nach Trennung von Real- und Imaginärteil die \textbf{beiden Josephson-Gleichungen}:
+\begin{align}
+    I &= I_c \sin(\varphi) \label{eq:jos1} \\
+    \frac{\partial \varphi}{\partial t} &= \frac{2e}{\hbar} V \label{eq:jos2}
+\end{align}
+Gleichung \eqref{eq:jos1} beschreibt den \textbf{DC-Josephson-Effekt}: Ein supraleitender Gleichstrom bis zu einem Maximalwert $I_c$ kann bei $V=0$ fließen. Gleichung \eqref{eq:jos2} beschreibt den \textbf{AC-Josephson-Effekt}: Liegt eine endliche Spannung $V$ an, ändert sich die Phase linear in der Zeit ($\varphi(t) = \varphi_0 + \omega_J t$), was zu einem Wechselstrom mit der Frequenz $f_J = \frac{2e}{h}V$ führt (\SI{483.6}{\giga\hertz\per\milli\volt}).
+
+\subsection{Das RCSJ-Modell und das Waschbrettpotential}
+Reale Josephson-Kontakte weisen neben dem idealen Tunnelstrom auch eine Kapazität $C$ (durch die Plattenkondensator-Geometrie) und einen Normalwiderstand $R$ (durch Quasiteilchen-Tunneln oder externe Shunts) auf. Das \textit{Resistively and Capacitively Shunted Junction} (RCSJ) Modell beschreibt den Kontakt als Parallelschaltung dieser drei Elemente. Die Kirchhoffsche Knotenregel liefert:
+\begin{equation}
+    I = I_c \sin(\varphi) + \frac{V}{R} + C \frac{dV}{dt}
+\end{equation}
+Mit der zweiten Josephson-Gleichung lässt sich dies in eine nichtlineare Differentialgleichung für die Phase $\varphi$ umschreiben:
+\begin{equation}
+    \frac{\hbar C}{2e} \ddot{\varphi} + \frac{\hbar}{2eR} \dot{\varphi} + I_c \sin(\varphi) = I
+\end{equation}
+Diese Gleichung ist mathematisch identisch zur Bewegungsgleichung eines Teilchens der Masse $m \propto C$ mit Reibung $\gamma \propto 1/R$ in einem \textbf{Waschbrettpotential} (Tilted Washboard Potential):
+\begin{equation}
+    U(\varphi) = -E_J \cos(\varphi) - \frac{\hbar I}{2e} \varphi \quad \text{mit} \quad E_J = \frac{\hbar I_c}{2e}
+\end{equation}
+Die Dynamik wird maßgeblich durch den dimensionslosen \textbf{Stewart-McCumber-Parameter} $\beta_c$ bestimmt:
+\begin{equation}
+    \beta_c = \frac{2e I_c R^2 C}{\hbar}
+\end{equation}
+\begin{itemize}
+    \item \textbf{Unterdämpfter Fall ($\beta_c \gg 1$):} Die Masse (Kapazität) dominiert. Das Teilchen kann im Potentialtal ruhen ($V=0$) oder über die Maxima rollen ($V \neq 0$). Dies führt zu einer starken \textbf{Hysterese} in der $I$-$V$-Kennlinie. Solche Kontakte sind typischerweise \textit{unshunted}.
+    \item \textbf{Überdämpfter Fall ($\beta_c \ll 1$):} Die Reibung dominiert. Sobald $I < I_c$ fällt, bleibt das Teilchen sofort im nächsten Minimum liegen. Die Hysterese verschwindet. Dies wird experimentell durch einen parallelen \textbf{Shunt-Widerstand} erzwungen. Im Praktikum ist anhand der $I$-$V$-Kurve zu identifizieren, ob der gemessene Kontakt geshuntet ist.
+\end{itemize}
+
+\subsection{Magnetfeldabhängigkeit und Fraunhofer-Muster}
+Ein Magnetfeld $\vec{B}$ parallel zur Barriere moduliert die Phase räumlich. Aus der Eichinvarianz folgt der Gradient der Phasendifferenz entlang der Kontaktbreite $x$:
+\begin{equation}
+    \frac{\partial \varphi}{\partial x} = \frac{2e d}{\hbar} B
+\end{equation}
+wobei $d = 2\lambda_L + t_{ox}$ die magnetische Eindringdicke (inklusive Oxidschicht $t_{ox}$) ist. Integriert man die lokale Stromdichte $J_c \sin(\varphi(x))$ über einen rechteckigen Kontakt der Breite $w$, erhält man für den maximalen kritischen Strom ein \textbf{Fraunhofer-Beugungsmuster}:
+\begin{equation}
+    I_c(B) = I_c(0) \left| \frac{\sin\left(\pi \frac{\Phi}{\Phi_0}\right)}{\pi \frac{\Phi}{\Phi_0}} \right|
+\end{equation}
+mit dem magnetischen Fluss $\Phi = B \cdot w \cdot d$ durch den Kontakt. Die Minima treten bei ganzzahligen Vielfachen des Flussquants auf ($\Phi = n\Phi_0$). 
+
+Diese Ableitung setzt voraus, dass das Eigenfeld des Josephson-Stroms vernachlässigbar ist. Dies ist der Fall für "kurze" Kontakte ($w < \lambda_J$). Die \textbf{Josephson-Eindringtiefe} $\lambda_J$ gibt an, wie tief ein Magnetfeld in den Kontakt parallel zur Barriere eindringen kann:
+\begin{equation}
+    \lambda_J = \sqrt{\frac{\hbar}{2e \mu_0 d J_c}}
+\end{equation}
+Aus der experimentellen Bestimmung der Minima-Abstände $\Delta B$ lässt sich bei bekannter Kontaktgeometrie die London-Eindringtiefe $\lambda_L$ des Niobs extrahieren.
+
+\subsection{SQUID (Superconducting Quantum Interference Device)}
+Schaltet man zwei Josephson-Kontakte in einem supraleitenden Ring parallel, entsteht ein DC-SQUID. Die makroskopischen Wellenfunktionen interferieren in Abhängigkeit des magnetischen Flusses durch den Ring. Der kritische Gesamtstrom moduliert periodisch mit $\Phi_0$, was SQUIDs zu den empfindlichsten Magnetometern der Welt macht: $I_{max} = 2I_c |\cos(\pi \Phi / \Phi_0)|$.
+
+\section{Experimentelle Grundlagen und Messtechnik}
+
+\subsection{Kryotechnik, Vakuum und Temperaturregelung}
+Um Niob ($T_c \approx \SI{9.2}{\kelvin}$) supraleitend zu machen, wird flüssiges Helium (LHe) verwendet. Das Phasendiagramm von $^4$He zeigt, dass es bei Atmosphärendruck bei \SI{4.2}{\kelvin} siedet. Um den extremen Temperaturgradienten zur Raumtemperatur aufrechtzuerhalten, wird ein mehrstufiger Kryostat verwendet. Ein Isolationsvakuum ($p < 10^{-4}$ mbar) unterbindet konvektiven Wärmetransport. Ein Schild aus flüssigem Stickstoff (LN$_2$, \SI{77}{\kelvin}) minimiert die Wärmestrahlung (Stefan-Boltzmann-Gesetz, $P \propto T^4$). 
+
+Die Temperaturregelung der Probe erfolgt über einen \SI{3}{\watt}-Heizwiderstand. Durch gezieltes Gegenheizen kann die Temperatur der Probe kontrolliert von \SI{4.2}{\kelvin} bis über $T_c$ angehoben werden, um $I_c(T)$ und $\Delta(T)$ aufzuzeichnen.
+
+\subsection{Magnetfelder und Erdmagnetfeldkompensation}
+Die Magnetfeldabhängigkeit wird mittels \textbf{Helmholtz-Spulen} untersucht. Diese Anordnung aus zwei identischen Spulen im Abstand ihres Radius $R$ erzeugt ein hochhomogenes Magnetfeld im Zentrum:
+\begin{equation}
+    B = \left(\frac{4}{5}\right)^{3/2} \frac{\mu_0 n I_{Spule}}{R}
+\end{equation}
+Im Versuch wird der Spulenstrom von \SI{-1.3}{\ampere} bis \SI{+1.3}{\ampere} variiert, um mindestens die zweiten Interferenzminima des Fraunhofer-Musters aufzulösen. 
+
+\textit{Wichtig:} Das Erdmagnetfeld beträgt in Mitteleuropa etwa \SI{40}{\micro\tesla} bis \SI{50}{\micro\tesla}. Da die Periode des Fraunhofer-Musters in einer ähnlichen Größenordnung liegt, würde das Erdmagnetfeld das Interferenzmuster stark verschieben und verfälschen. Daher ist eine \textbf{Erdmagnetfeldkompensation (EMK)} zwingend erforderlich. Im vorliegenden Aufbau wird hierfür ein konstanter Kompensationsstrom von ca. \SI{460}{\milli\ampere} auf eine orthogonale Spulenanordnung gegeben.
