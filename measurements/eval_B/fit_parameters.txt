@@ -1,0 +1,2 @@
+I0_mA	B_offset_mT	delta_B_mT	Area_eff_m2
+5.909298e-02 -5.212789e-03 1.090710e+00 1.895861e-12

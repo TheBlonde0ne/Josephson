@@ -8,7 +8,7 @@ import scipy.constants as const
 # ==========================================
 # 1. PARAMETERS & CONSTANTS
 # ==========================================
-DATA_DIR = 'Bdependence'     # Folder containing the -0p5V.txt files
+DATA_DIR = '../Bdependence'     # Folder containing the -0p5V.txt files
 V_CRITERION = 4e-5           # 50 uV threshold (applied AFTER offset correction)
 SKIP_ROWS = 1                # Skip the text header row
 
@@ -31,9 +31,6 @@ def extract_ic_from_vi(voltage_array, current_array, threshold):
     sort_idx = np.argsort((current_array))
     v_sorted = (voltage_array[sort_idx])
     i_sorted = (current_array[sort_idx])
-    # sort_idx = np.argsort(np.abs(current_array))
-    # v_sorted = np.abs(voltage_array[sort_idx])
-    # i_sorted = np.abs(current_array[sort_idx])
     
     # Find where voltage crosses the criterion
     transition_indices = np.where(v_sorted > threshold)[0]
@@ -46,8 +43,8 @@ def extract_ic_from_vi(voltage_array, current_array, threshold):
     plt.figure(figsize=(6, 4))
     plt.plot(v_sorted * 1e6, i_sorted * 1e6, marker='o', linestyle='-', color='blue', markersize=1, label='Measured I-V')
     # plt.axhline(threshold * 1e6, color='red', linestyle='--', label='Voltage Criterion')
-    plt.ylabel('Current (µA)')
-    plt.xlabel('Voltage (µV)')
+    plt.ylabel('Current ($\\mu$$A)')
+    plt.xlabel('Voltage ($\\mu$$V)')
     plt.title('I-V Curve with Criterion')
     plt.legend()
     plt.grid(True, linestyle='--', alpha=0.7)
