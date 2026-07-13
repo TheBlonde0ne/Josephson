@@ -13,4 +13,5 @@
 \contentsline {section}{\numberline {4}Experimentelle Grundlagen und Messtechnik}{6}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Kryotechnik, Vakuum und Temperaturregelung}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Magnetfelder und Erdmagnetfeldkompensation}{6}{subsection.4.2}%
-\contentsline {section}{\numberline {5}References}{6}{section.5}%
+\contentsline {subsection}{\numberline {4.3}Temperature Abhängigkeit von $I_\mathrm {c}$ und $T_\mathrm {c}$}{7}{subsection.4.3}%
+\contentsline {section}{\numberline {5}References}{8}{section.5}%
