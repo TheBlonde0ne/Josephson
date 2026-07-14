@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.26)  13 JUL 2026 04:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.26)  15 JUL 2026 01:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -802,7 +802,7 @@ Package hyperref Info: Link coloring ON on input line 7.
 \openout4 = `main.out'.
 
  (titlepage.tex
-<images/unistuttgart_logo_englisch.pdf, id=67, 284.52798pt x 142.26349pt>
+<images/unistuttgart_logo_englisch.pdf, id=71, 284.52798pt x 142.26349pt>
 File: images/unistuttgart_logo_englisch.pdf Graphic file (type pdf)
 <use images/unistuttgart_logo_englisch.pdf>
 Package pdftex.def Info: images/unistuttgart_logo_englisch.pdf  used on input line 4.
@@ -858,11 +858,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 52
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [4{C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}] [5]) (sections/theory.tex) (sections/execution.tex) (Leonard/Temperatur.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 1.
+(Font)              <14.4> on input line 1.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -888,29 +884,42 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-<Leonard/Plots/example_curve.pdf, id=152, 616.90791pt x 389.15012pt>
+<Leonard/Plots/example_curve.pdf, id=157, 616.90791pt x 389.15012pt>
 File: Leonard/Plots/example_curve.pdf Graphic file (type pdf)
 <use Leonard/Plots/example_curve.pdf>
 Package pdftex.def Info: Leonard/Plots/example_curve.pdf  used on input line 5.
 (pdftex.def)             Requested size: 346.89731pt x 218.82515pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 6.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 6.
 [6]
 
 LaTeX Warning: Reference `BFeld' on page 7 undefined on input line 10.
 
-<Leonard/Plots/Ic.pdf, id=161, 830.1075pt x 334.0825pt>
+<Leonard/Plots/Ic.pdf, id=166, 830.1075pt x 334.0825pt>
 File: Leonard/Plots/Ic.pdf Graphic file (type pdf)
 <use Leonard/Plots/Ic.pdf>
 Package pdftex.def Info: Leonard/Plots/Ic.pdf  used on input line 13.
 (pdftex.def)             Requested size: 346.89731pt x 139.6102pt.
 [7 <./Leonard/Plots/example_curve.pdf>]
-<Leonard/Plots/Delta.pdf, id=231, 830.1075pt x 334.22366pt>
+<Leonard/Plots/Delta.pdf, id=235, 830.1075pt x 334.22366pt>
 File: Leonard/Plots/Delta.pdf Graphic file (type pdf)
 <use Leonard/Plots/Delta.pdf>
 Package pdftex.def Info: Leonard/Plots/Delta.pdf  used on input line 22.
 (pdftex.def)             Requested size: 346.89731pt x 139.66919pt.
-) (sections/summary.tex) (main.bbl) [8 <./Leonard/Plots/Ic.pdf> <./Leonard/Plots/Delta.pdf>] (main.aux)
+) (Leonard/Shunt.tex
+Overfull \hbox (1.33818pt too wide) in paragraph at lines 2--3
+\T1/lmr/m/n/10 (-20) Zur Bes-tim-mung des Shunt-Widerstandes $\OML/lmm/m/it/10 R[]$ \T1/lmr/m/n/10 (-20) wird die bei $\OML/lmm/m/it/10 T \OT1/lmr/m/n/10 (-20) = 4\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (-20) 2 K$ \T1/lmr/m/n/10 (-20) und $\OML/lmm/m/it/10 B \OT1/lmr/m/n/10 (-20) = 0 T$ \T1/lmr/m/n/10 (-20) aufgenommeneStrom-
+ []
+
+[8 <./Leonard/Plots/Ic.pdf> <./Leonard/Plots/Delta.pdf>]
+<Leonard/Plots/Shunt_fits_4p191K.pdf, id=390, 578.16pt x 361.35pt>
+File: Leonard/Plots/Shunt_fits_4p191K.pdf Graphic file (type pdf)
+<use Leonard/Plots/Shunt_fits_4p191K.pdf>
+Package pdftex.def Info: Leonard/Plots/Shunt_fits_4p191K.pdf  used on input line 6.
+(pdftex.def)             Requested size: 346.89731pt x 216.81168pt.
+ [9 <./Leonard/Plots/Shunt_fits_4p191K.pdf>]) (sections/summary.tex) (main.bbl) [10] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -920,20 +929,20 @@ L3 programming layer <2025-12-24>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B7C82C18E2ED415BEE19E205D97EFE63;3921.
+(rerunfilecheck)             Checksum: A410921334AF0B10867E818C9D0E64FF;4018.
  ) 
 Here is how much of TeX's memory you used:
- 25204 strings out of 467870
- 487476 string characters out of 5418355
+ 25221 strings out of 467870
+ 488047 string characters out of 5418355
  943528 words of memory out of 5000000
- 53507 multiletter control sequences out of 15000+600000
- 707496 words of font info for 185 fonts, out of 8000000 for 9000
+ 53516 multiletter control sequences out of 15000+600000
+ 703491 words of font info for 180 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,14n,99p,1042b,1167s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (9 pages, 535355 bytes).
+<C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (11 pages, 567338 bytes).
 PDF statistics:
- 494 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 47253 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 565 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 45218 words of extra memory for PDF output out of 51595 (max. 10000000)
 
