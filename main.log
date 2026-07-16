@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.9)  16 JUL 2026 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.5.9)  16 JUL 2026 16:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1032,7 +1032,7 @@ Package hyperref Info: Link coloring ON on input line 7.
 \openout5 = `main.out'.
 
  (titlepage.tex
-<images/unistuttgart_logo_englisch.pdf, id=91, 284.52798pt x 142.26349pt>
+<images/unistuttgart_logo_englisch.pdf, id=99, 284.52798pt x 142.26349pt>
 File: images/unistuttgart_logo_englisch.pdf Graphic file (type pdf)
 <use images/unistuttgart_logo_englisch.pdf>
 Package pdftex.def Info: images/unistuttgart_logo_englisch.pdf  used on input line 4.
@@ -1099,7 +1099,7 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 [4{C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-<example-image-a.pdf, id=171, 321.2pt x 240.9pt>
+<example-image-a.pdf, id=181, 321.2pt x 240.9pt>
 File: example-image-a.pdf Graphic file (type pdf)
 <use example-image-a.pdf>
 Package pdftex.def Info: example-image-a.pdf  used on input line 88.
@@ -1112,55 +1112,9 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 [5 <C:/Users/walln/AppData/Local/Programs/MiKTeX/tex/latex/mwe/example-image-a.pdf>]
 
-[6]) (sections/execution.tex)
+[6]) (sections/execution.tex
 
-[7] (Leonard/Temperatur.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1.
-
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 5.
-(pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-
-LaTeX Warning: Reference `BFeld' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Reference `eq:IT' on page 1 undefined on input line 11.
-
-File: example-image-a.pdf Graphic file (type pdf)
-<use example-image-a.pdf>
-Package pdftex.def Info: example-image-a.pdf  used on input line 14.
-(pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
-
-
-[8]) (sections/results.tex
+[7]) (sections/results.tex
 <measurements/eval_B/simple_curve.png, id=221, 578.16pt x 361.35pt>
 File: measurements/eval_B/simple_curve.png Graphic file (type png)
 <use measurements/eval_B/simple_curve.png>
@@ -1173,17 +1127,84 @@ Package pdftex.def Info: measurements/eval_B/fraunhofer_fit.png  used on input l
 (pdftex.def)             Requested size: 346.89731pt x 231.26651pt.
 
 
-[9]
+[8]
 
-[10 <./measurements/eval_B/simple_curve.png>]
+[9 <./measurements/eval_B/simple_curve.png>]
 
-[11 <./measurements/eval_B/fraunhofer_fit.png>]) (sections/error_analysis.tex) (sections/summary.tex
+[10 <./measurements/eval_B/fraunhofer_fit.png>]) (Leonard/Temperatur.tex
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1.
 
-[12])
 
-[13]
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
 
-[14] (main.aux)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+<Leonard/Plots/example_curve.pdf, id=255, 616.90791pt x 389.15012pt>
+File: Leonard/Plots/example_curve.pdf Graphic file (type pdf)
+<use Leonard/Plots/example_curve.pdf>
+Package pdftex.def Info: Leonard/Plots/example_curve.pdf  used on input line 5.
+(pdftex.def)             Requested size: 346.89731pt x 218.82515pt.
+
+LaTeX Warning: Reference `BFeld' on page 11 undefined on input line 10.
+
+<Leonard/Plots/Ic.pdf, id=257, 830.1075pt x 334.0825pt>
+File: Leonard/Plots/Ic.pdf Graphic file (type pdf)
+<use Leonard/Plots/Ic.pdf>
+Package pdftex.def Info: Leonard/Plots/Ic.pdf  used on input line 13.
+(pdftex.def)             Requested size: 346.89731pt x 139.6102pt.
+
+
+[11 <./Leonard/Plots/example_curve.pdf>]
+
+LaTeX Warning: Reference `eq:DeltaT' on page 12 undefined on input line 19.
+
+<Leonard/Plots/Delta.pdf, id=323, 830.1075pt x 334.22366pt>
+File: Leonard/Plots/Delta.pdf Graphic file (type pdf)
+<use Leonard/Plots/Delta.pdf>
+Package pdftex.def Info: Leonard/Plots/Delta.pdf  used on input line 22.
+(pdftex.def)             Requested size: 346.89731pt x 139.66919pt.
+) (Leonard/Shunt.tex
+Overfull \hbox (1.33818pt too wide) in paragraph at lines 2--3
+\T1/lmr/m/n/10 (-20) Zur Be-stim-mung des Shunt-Widerstandes $\OML/lmm/m/it/10 R[]$ \T1/lmr/m/n/10 (-20) wird die bei $\OML/lmm/m/it/10 T \OT1/lmr/m/n/10 (-20) = 4\OML/lmm/m/it/10 :\OT1/lmr/m/n/10 (-20) 2 K$ \T1/lmr/m/n/10 (-20) und $\OML/lmm/m/it/10 B \OT1/lmr/m/n/10 (-20) = 0 T$ \T1/lmr/m/n/10 (-20) aufgenommeneStrom-
+ []
+
+
+
+[12 <./Leonard/Plots/Ic.pdf> <./Leonard/Plots/Delta.pdf>]
+<Leonard/Plots/Shunt_fits_4p191K.pdf, id=478, 578.16pt x 361.35pt>
+File: Leonard/Plots/Shunt_fits_4p191K.pdf Graphic file (type pdf)
+<use Leonard/Plots/Shunt_fits_4p191K.pdf>
+Package pdftex.def Info: Leonard/Plots/Shunt_fits_4p191K.pdf  used on input line 6.
+(pdftex.def)             Requested size: 346.89731pt x 216.81168pt.
+
+
+[13 <./Leonard/Plots/Shunt_fits_4p191K.pdf>]) (sections/error_analysis.tex) (sections/summary.tex
+
+[14])
+
+[15]
+
+[16] (main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-14>
@@ -1193,23 +1214,23 @@ L3 programming layer <2025-04-14>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 5DAEEECB1012727E24B88FD5794B4C5B;4830.
+(rerunfilecheck)             Checksum: 35D59FDDF34FD806CBD3A7D1CEF7D27C;5035.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32490 strings out of 469941
- 632747 string characters out of 5469431
- 1484474 words of memory out of 5000000
- 58581 multiletter control sequences out of 15000+600000
- 717095 words of font info for 207 fonts, out of 8000000 for 9000
+ 32547 strings out of 469941
+ 634176 string characters out of 5469431
+ 1488265 words of memory out of 5000000
+ 58608 multiletter control sequences out of 15000+600000
+ 714042 words of font info for 212 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  78i,14n,86p,1040b,2371s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on main.pdf (15 pages, 841144 bytes).
+<C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi5.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr5.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/walln/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on main.pdf (17 pages, 968220 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 51397 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 49385 words of extra memory for PDF output out of 51595 (max. 10000000)
 
