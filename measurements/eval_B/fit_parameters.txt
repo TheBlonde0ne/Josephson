@@ -1,2 +1,2 @@
-I0_mA	B_offset_mT	delta_B_mT	Area_eff_m2
-5.909298e-02 -5.212789e-03 1.090710e+00 1.895861e-12
+I0_mA	I0_err_mA	B_offset_mT	B_offset_err_mT	delta_B_mT	delta_B_err_mT	C_mA	C_err_mA	Area_eff_m2	Area_eff_err_m2
+5.909298e-02 3.525113e-03 -5.212789e-03 1.370692e-02 1.090710e+00 1.909656e-02 9.293781e-03 1.047549e-03 1.895861e-12 3.319347e-14

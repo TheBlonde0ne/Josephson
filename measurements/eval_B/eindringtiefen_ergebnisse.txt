@@ -1,0 +1,7 @@
+Ergebnisse der physikalischen Eindringtiefen-Analyse
+===================================================
+
+London'sche Eindringtiefe lambda_L:   (79.7931 +/- 1.6597) nm
+Josephson-Eindringtiefe lambda_J:    (48.3495 +/- 1.5029) um
+Kritische Stromdichte j_c:           (5909.2980 +/- 352.5113) A/cm^2
+Verhaeltnis L / lambda_J:            0.2068
