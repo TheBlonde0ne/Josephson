@@ -84,7 +84,7 @@ if len(B_mT) > 0:
         plt.ylabel('Maximaler Josephson-Strom $I_c$ [\u03BCA]', fontsize=12) # Kept label unit matching the image
         
         # Use a more subtle layout to match standard physics plots
-        plt.grid(False)
+        plt.grid(True, which='both', linestyle='--', linewidth=0.5, alpha=0.7)
         plt.gca().tick_params(direction='in', top=True, right=True)
         
         fit_text = (f"Fit Results:\n"
@@ -118,7 +118,7 @@ if len(B_mT) > 0:
 
         # 5. Plotting the shaded region
         plt.fill_between(B_fit_line, Ic_fit_lower, Ic_fit_upper, 
-                 color='#0047AB', alpha=0.15, label=r'$1\sigma$ Fit Confidence Band', zorder=1)
+                 color='#0047AB', alpha=0.15, label=r'$\sigma_1$ Fit Confidence Band', zorder=1)
 
 
         plt.legend(loc='upper right', frameon=False)

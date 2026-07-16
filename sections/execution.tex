@@ -1,0 +1,16 @@
+
+\section{Experimentelle Grundlagen und Messtechnik}
+
+\subsection{Kryotechnik, Vakuum und Temperaturregelung}
+Um Niob ($T_c \approx \SI{9.2}{\kelvin}$) supraleitend zu machen, wird flüssiges Helium (LHe) verwendet. Das Phasendiagramm von $^4$He zeigt, dass es bei Atmosphärendruck bei \SI{4.2}{\kelvin} siedet. Um den extremen Temperaturgradienten zur Raumtemperatur aufrechtzuerhalten, wird ein mehrstufiger Kryostat verwendet. Ein Isolationsvakuum ($p < 10^{-4}$ mbar) unterbindet konvektiven Wärmetransport. Ein Schild aus flüssigem Stickstoff (LN$_2$, \SI{77}{\kelvin}) minimiert die Wärmestrahlung (Stefan-Boltzmann-Gesetz, $P \propto T^4$). 
+
+Die Temperaturregelung der Probe erfolgt über einen \SI{3}{\watt}-Heizwiderstand. Durch gezieltes Gegenheizen kann die Temperatur der Probe kontrolliert von \SI{4.2}{\kelvin} bis über $T_c$ angehoben werden, um $I_c(T)$ und $\Delta(T)$ aufzuzeichnen.
+
+\subsection{Magnetfelder und Erdmagnetfeldkompensation}
+Die Magnetfeldabhängigkeit wird mittels Helmholtz-Spulen untersucht. Diese Anordnung aus zwei identischen Spulen im Abstand ihres Radius $R$ erzeugt ein hochhomogenes Magnetfeld im Zentrum:
+\begin{equation}
+    B = \left(\frac{4}{5}\right)^{3/2} \frac{\mu_0 n I_{Spule}}{R}
+\end{equation}
+Im Versuch wird der Spulenstrom von \SI{-1.3}{\ampere} bis \SI{+1.3}{\ampere} variiert, um mindestens die zweiten Interferenzminima des Fraunhofer-Musters aufzulösen. 
+
+Das Erdmagnetfeld beträgt in Mitteleuropa etwa \SI{40}{\micro\tesla} bis \SI{50}{\micro\tesla}. Da die Periode des Fraunhofer-Musters in einer ähnlichen Größenordnung liegt, würde das Erdmagnetfeld das Interferenzmuster stark verschieben und verfälschen. Daher ist eine Erdmagnetfeldkompensation (EMK) zwingend erforderlich. Im vorliegenden Aufbau wird hierfür ein konstanter Kompensationsstrom von ca. \SI{460}{\milli\ampere} auf eine orthogonale Spulenanordnung gegeben.
