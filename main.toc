@@ -13,6 +13,8 @@
 \contentsline {section}{\numberline {4}Experimentelle Grundlagen und Messtechnik}{6}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Kryotechnik, Vakuum und Temperaturregelung}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Magnetfelder und Erdmagnetfeldkompensation}{6}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Temperaturabhängigkeit von $I_\mathrm {c}$ und $T_\mathrm {c}$}{7}{section.5}%
-\contentsline {section}{\numberline {6}Shunt-Widerstand}{9}{section.6}%
-\contentsline {section}{\numberline {7}References}{10}{section.7}%
+\contentsline {section}{\numberline {5}Durchführung}{7}{section.5}%
+\contentsline {section}{\numberline {6}Temperaturabhängigkeit von $I_\mathrm {c}$ und $T_\mathrm {c}$}{7}{section.6}%
+\contentsline {section}{\numberline {7}Shunt-Widerstand}{9}{section.7}%
+\contentsline {section}{\numberline {8}Zusammenfassung}{10}{section.8}%
+\contentsline {section}{\numberline {9}References}{10}{section.9}%
