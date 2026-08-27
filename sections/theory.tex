@@ -70,26 +70,26 @@ Zusätzlich zu den Quasiteilchen können auch intakte Cooper-Paare durch die Bar
 \end{equation}
 wobei $K$ die Kopplungskonstante der Barriere ist. Mit dem Ansatz $\Psi_{1,2} = \sqrt{n_{1,2}} e^{i\theta_{1,2}}$ und der Phasendifferenz $\varphi = \theta_2 - \theta_1$ erhält man nach Trennung von Real- und Imaginärteil die beiden Josephson-Gleichungen:
 \begin{equation}
-    I = I_c \sin(\varphi)
+    I_s = I_c \sin(\varphi)
     \label{eq:jos1}
 \end{equation}
 \begin{equation}
-   \frac{\partial \varphi}{\partial t} = \frac{2e}{\hbar} V
-   \label{eq:jos2}
+    \frac{\partial \varphi}{\partial t} = \frac{2e}{\hbar} V
+    \label{eq:jos2}
 \end{equation}
-\cref{eq:jos1} beschreibt den DC-Josephson-Effekt: Ein supraleitender Gleichstrom bis zu einem Maximalwert $I_c$ kann bei $V=0$ fließen. \cref{eq:jos2} beschreibt den AC-Josephson-Effekt: Liegt eine endliche Spannung $V$ an, ändert sich die Phase linear in der Zeit ($\varphi(t) = \varphi_0 + \omega_J t$), was zu einem Wechselstrom mit der Frequenz $f_J = \frac{2e}{h}V$ führt ($\frac{2e}{h}=$\SI{483.6}{\giga\hertz\per\milli\volt}).
+\cref{eq:jos1} beschreibt den DC-Josephson-Effekt: Ein supraleitender Gleichstrom bis zu einem Maximalwert $I_c$ kann bei $V=0$ fließen. \cref{eq:jos2} beschreibt den AC-Josephson-Effekt: Liegt eine endliche Spannung $V$ an, ändert sich die Phase linear in der Zeit ($\varphi(t) = \varphi_0 + \omega_J t$), was zu einem Wechselstrom mit der Josephson-Frequenz $f_J = \frac{2e}{h}V$ führt ($\frac{2e}{h}=\SI{483.6}{\giga\hertz\per\milli\volt}$).
 
 \paragraph{DC-Josephsoneffekt}
-Für diesen Effekt misst man den Tunnelstrom für $V=0$ bei unterschiedlichen Temperaturen. Durch die 2. Josephson-Gleichung muss \(\dot{\delta} = 0\) und somit \(\delta = \text{const.}\). Da die Phasendifferenz nur vom angelegten Strom abhängt, muss durch die 1. Josephson-Gleichung ein nicht verschwindender und zeitlich konstanter Tunnelstrom \(I_S\) fließen.
-Über der kritischen Stromstärke \(I_S\) bricht das Cooper-Paar-Tunneln zusammen und es fällt eine Spannung am Kontakt ab.
+Für diesen Effekt misst man den Tunnelstrom für $V=0$ bei unterschiedlichen Temperaturen. Nach der 2. Josephson-Gleichung (\cref{eq:jos2}) gilt für $V=0$ direkt $\dot{\varphi} = 0$ und somit $\varphi = \text{const.}$ Da sich die Phasendifferenz stationär auf den eingeprägten Strom einstellt, fließt nach der 1. Josephson-Gleichung (\cref{eq:jos1}) ein zeitlich konstanter Suprastrom $I_s \le I_c$ ohne Spannungsabfall. Übersteigt der Strom die kritische Stromstärke $I_c$, bricht das reine Cooper-Paar-Tunneln zusammen und am Kontakt fällt eine endliche Spannung ab.
 
-\paragraph{AC-Josephsoneffekt} Für diesen Effekt misst man den Tunnelstrom für eine endliche Spannung $V\neq0$. Nach der 2. Josephson-Gleichung gilt
+\paragraph{AC-Josephsoneffekt}
+Liegt am Kontakt eine zeitlich konstante Spannung $V \neq 0$ an, folgt durch Integration der 2. Josephson-Gleichung:
 \begin{equation}
-    \delta = \frac{2e}{\hbar} U \cdot t + \delta_0 = \omega_J t + \delta_0
+    \varphi(t) = \frac{2e}{\hbar} V \cdot t + \varphi_0 = \omega_J t + \varphi_0
 \end{equation}
-mit der Josephsonfrequenz \(\omega_J = \frac{2e}{\hbar} U\). Somit ändert sich die Phasendifferenz linear in der Zeit und die 1. Josephson-Gleichung liefert einen Wechselstrom mit der Frequenz \(\omega_J\):
+mit der Kreisfrequenz $\omega_J = \frac{2e}{\hbar} V$. Die Phasendifferenz wächst linear in der Zeit, sodass die 1. Josephson-Gleichung einen hochfrequenten Wechselstrom liefert:
 \begin{equation}
-    I_S(t) = I_C \cdot \sin (\omega_J t + \delta_0)
+    I_s(t) = I_c \sin(\omega_J t + \varphi_0)
 \end{equation}
 
 \subsection{Das RCSJ-Modell und das Waschbrettpotential}

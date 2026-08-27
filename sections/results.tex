@@ -6,11 +6,23 @@ Dabei wurden die Magnetfeldstärken über \cref{eq:Spule} mit dem Verhältnis \(
 \begin{figure}
     \centering
     \includegraphics[width=.8 \linewidth]{measurements/eval_B/simple_curve.png}
-    \caption{Aufgenommene Spannung-Strom-Kennlinie für eine angelegte Spulenspannung von \(-0.5\text{ Volt}\) bei \SI{4.2}{\kelvin}. Die Sprünge bei \(V = \pm 2\Delta/e\) sind deutlich zu erkennen.}
+    \caption{Aufgenommene Spannung-Strom-Kennlinie für eine angelegte Spulenspannung von \SI{-0.5}{\volt} bei \SI{4.2}{\kelvin}. Die Sprünge bei \(V = \pm 2\Delta/e\) sind deutlich zu erkennen.}
     \label{fig:b-dependence}
 \end{figure}
 
-Aus den Kennlinien wurde der jeweilige maximale Josephson-Strom bestimmt und gegen die Magnetfeldstärke aufgetragen. Ein repräsentativer Plot ist in \cref{fig:b-dependence} dargestellt. Die Ergebnisse wurden zusätzlich an den theoretischen Verlauf der Fraunhofer-Interferenz (\cref{eq:fraunhofer}) gefittet. Daraus ergaben sich die Fitparameter aus \cref{tab:josephson_fit_ergebnisse}.
+\begin{figure}
+    \centering
+    \includegraphics[width=.8 \linewidth]{measurements/eval_B/plots/fit_-0p5V.png}
+    \caption{Aufgenommene Strom-Spannungs-Kennlinie bei einer Spulenspannung von \SI{-0.5}{\volt} und einer Temperatur von \SI{4.2}{\kelvin}. Die durchgezogenen bzw. gestrichelten Linien zeigen die linearen Ausgleichsgeraden der einzelnen Kennlinienabschnitte.}
+    \label{fig:b-dependence-fit}
+\end{figure}
+
+Aus den Kennlinien wurde der jeweilige maximale Josephson-Strom bestimmt und gegen die Magnetfeldstärke aufgetragen. Ein repräsentativer Plot ist in \cref{fig:b-dependence} dargestellt. Die Auswertung der aufgenommenen Messkurven erfolgte durch numerische Bestimmung der lokalen Steigungsmaxima ($\mathrm{d}V/\mathrm{d}I$). Es wurden die Sprungbereiche bestimmt, die einzelnen Abschnitte separat linear gefittet und die kritischen Ströme $I_c^\pm$ als Schnittpunkte des supraleitenden Plateaus mit den jeweiligen Sprungflanken extrahiert (beispielhaft dargestellt in \cref{fig:b-dependence-fit}). Der Verlauf des Frauenhofer-Patterns wurde an die Ergebnisse gefittet (\cref{eq:fraunhofer}). Daraus ergaben sich die Fitparameter aus \cref{tab:josephson_fit_ergebnisse}.
+
+Auffällig sind die vergrößerten Fehlerbalken des kritischen Stroms $I_c$ im Bereich um das Hauptmaximum ($B \approx \SI{0}{\milli\tesla}$). Dies lässt sich auf zwei Faktoren zurückführen:
+
+Zum einen erreicht der Kontakt bei verschwindendem Magnetfeld seine maximale Josephson-Kopplungsenergie. In diesem Bereich zeigt der Übergang vom supraleitenden Plateau in den resistiven Zustand experimentell keinen ideal scharfen Spannungssprung, sondern eine endliche Flankenbreite zum Beispiel durch thermisches Rauschen. 
+Zum anderen basiert die Bestimmung von $I_c$ in der Auswertung auf dem Schnittpunkt zweier linearer Fits (supraleitendes Plateau und Sprungflanke). Eine geringere Flankensteilheit sowie eine erhöhte Streuung der Messpunkte im Übergangsbereich führen über die Fehlerfortpflanzung der Fitparameter zu einer deutlich größeren Unsicherheit des berechneten Schnittpunkts auf der Stromachse. Bei höheren Magnetfeldern sinkt $I_c$, wodurch der Übergang schärfer abgegrenzt ist und die Schnittpunktbestimmung wieder mit geringeren Fehlern konvergiert.
 
 \begin{table}[htbp]
   \centering
@@ -20,7 +32,7 @@ Aus den Kennlinien wurde der jeweilige maximale Josephson-Strom bestimmt und geg
     \toprule
     Physikalische Größe & Symbol & Wert mit Unsicherheit & Einheit \\
     \midrule
-    Max. Josephson-Strom     & $I_0$               & \num{0.0591 \pm 0.0035}          & \si{mA} \\
+    Max. Josephson-Strom     & $I_c$               & \num{0.0591 \pm 0.0035}          & \si{mA} \\
                              &                     & \num{59.09 \pm 3.53}             & \si{\micro A} \\ \addlinespace
     Magnetisches Feld-Offset & $B_{\text{offset}}$ & \num{-0.0052 \pm 0.0137}         & \si{mT} \\ \addlinespace
     Periodizität             & $\Delta B$          & \num{1.0907 \pm 0.0191}          & \si{mT} \\ \addlinespace
@@ -37,11 +49,11 @@ Aus den Kennlinien wurde der jeweilige maximale Josephson-Strom bestimmt und geg
 \begin{figure}
     \centering
     \includegraphics[width=.8 \linewidth]{measurements/eval_B/fraunhofer_fit.png}
-    \caption{Maximaler Josephson-Strom \(I_C\) in Abhängigkeit der angelegten Magnetfeldstärke de Helmholtz-Spulen. Die Ergebnisse wurden an die Theorie der Fraunhofer-Interferenz gefittet. Zusätzlich sind noch die Konfidenzintervalle für \(\sigma_1\) basierend auf den Fehlern der Fits für die maximalen Josephson-Ströme dargestellt.}
+    \caption{Maximaler Josephson-Strom \(I_C\) in Abhängigkeit der angelegten Magnetfeldstärke de Helmholtz-Spulen. Der Verlauf des Frauenhofer-Patterns wurde an die Ergebnisse gefittet. Zusätzlich sind noch die Konfidenzintervalle für \(\sigma_1\) basierend auf den Fehlern der Fits für die maximalen Josephson-Ströme dargestellt.}
     \label{fig:fraunhofer-plot}
 \end{figure}
 
-Der aus dem Fit extrahierte maximale Josephson-Strom bei verschwindendem effektiven Magnetfeld beträgt $I_0 = (59.09 \pm 3.53)\ \mu\text{A}$ (bzw. $0.0591 \pm 0.0035\ \text{mA}$). Dieser Wert ist proportional zur Energielücke \(Delta(T)\) des Supraleiters.
+Der aus dem Fit extrahierte maximale Josephson-Strom bei verschwindendem effektiven Magnetfeld beträgt $I_c = (59.09 \pm 3.53)\ \mu\text{A}$ (bzw. $0.0591 \pm 0.0035\ \text{mA}$). Dieser Wert ist proportional zur Energielücke \(\Delta(T)\) des Supraleiters.
 Für das magnetische Feld-Offset ergibt sich ein Wert von $B_{\text{offset}} = (-5.2 \pm 13.7)\ \mu\text{T}$ (bzw. $-0.0052 \pm 0.0137\ \text{mT}$). Ein solches Feld-Offset resultiert physikalisch aus dem ungeschirmten Anteil des externen Erdmagnetfeldes (typischerweise im Bereich von $30\ \mu\text{T}$ bis $60\ \mu\text{T}$).
 Hierbei übersteigt die Unsicherheit den Wert des Offsets, sodass das Ergebnis mit einem Offset von null vereinbar ist.
 Die Periodizität der Oszillation, welche dem Durchtritt eines magnetischen Flussquants $\Phi_0$ durch die effektive Barrierefläche entspricht, beträgt $\Delta B = (1.0907 \pm 0.0191)\ \text{mT}$.

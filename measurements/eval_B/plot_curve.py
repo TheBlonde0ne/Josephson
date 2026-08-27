@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-path = "C:/Users/walln/Documents/Uni/Josephson/measurements/Bdependence/-0V.txt"
+path = "C:/Users/walln/Documents/Uni/Josephson/measurements/Bdependence/-0p5V.txt"
 
 df = pd.read_csv(path, sep="\t")
 v_col, i_col = df.columns[0], df.columns[1]
@@ -12,7 +12,7 @@ I = df[i_col].values
 
 plt.figure(figsize=(8, 5))
 plt.grid(which="both", alpha=0.5, linestyle=":")
-plt.scatter(I * 1e6, V * 1e3, s=10, edgecolor="#002D6D", label='Data Points')
+plt.scatter(I * 1e6, V * 1e3, s=10, edgecolor="#002D6D", label='Messdaten')
 plt.legend()
 plt.xlabel('Current (\u03bcA)')
 plt.ylabel('Voltage (mV)')

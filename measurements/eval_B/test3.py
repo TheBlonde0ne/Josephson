@@ -110,8 +110,8 @@ def evaluate_josephson_file(file_path):
     I_pos_bot, V_pos_bot = find_intersection(fit_plat, fit_j1)
     I_pos_top, V_pos_top = find_intersection(fit_j1, fit_b1)
     
-    fig, ax = plt.subplots(figsize=(8, 5))
-    ax.plot(I * 1e6, V * 1e3, 'k.', markersize=2, alpha=0.5, label='Data')
+    fig, ax = plt.subplots(figsize=(9, 6))
+    ax.plot(I * 1e6, V * 1e3, 'k.', markersize=2, alpha=0.3, label='Messdaten')
     
     i_ranges = [
         (I[idx_b2][0], I[idx_b2][-1]), (I[idx_j2][0], I[idx_j2][-1]), 
@@ -120,20 +120,41 @@ def evaluate_josephson_file(file_path):
     ]
     fits = [fit_b2, fit_j2, fit_plat, fit_j1, fit_b1]
     colors = ['c-', 'm--', 'b-', 'g--', 'r-']
+    labels = ['Ast $I < 0$', 'Sprung $I < 0$', 'Supraleitendes Plateau', 'Sprung $I > 0$', 'Ast $I > 0$']
     
-    for (i_min, i_max), fit, col in zip(i_ranges, fits, colors):
+    for (i_min, i_max), fit, col, lbl in zip(i_ranges, fits, colors, labels):
         i_line = np.linspace(i_min, i_max, 50)
-        ax.plot(i_line * 1e6, (fit[0] * i_line + fit[1]) * 1e3, col, linewidth=2)
+        ax.plot(i_line * 1e6, (fit[0] * i_line + fit[1]) * 1e3, col, linewidth=2, label=lbl)
 
-    ints = [(I_neg_top, V_neg_top, 'mo'), (I_neg_bot, V_neg_bot, 'bo'), 
-            (I_pos_bot, V_pos_bot, 'go'), (I_pos_top, V_pos_top, 'ro')]
-    for int_I, int_V, m in ints:
-        ax.plot(int_I * 1e6, int_V * 1e3, m, markersize=6)
+    # Schnittpunkte plotten
+    ints = [
+        (I_neg_bot, V_neg_bot, 'bo', f'$I_c^-$ = {I_neg_bot*1e6:.1f} µA'),
+        (I_pos_bot, V_pos_bot, 'go', f'$I_c^+$ = {I_pos_bot*1e6:.1f} µA'),
+        (I_neg_top, V_neg_top, 'mo', 'Oberer Schnitt ($I < 0$)'),
+        (I_pos_top, V_pos_top, 'ro', 'Oberer Schnitt ($I > 0$)')
+    ]
+    for int_I, int_V, m, lbl in ints:
+        ax.plot(int_I * 1e6, int_V * 1e3, m, markersize=5, label=lbl)
         
-    ax.set_title(f'Superconducting State Identified: {filename}')
-    ax.set_xlabel('Current (\u03bcA)')
-    ax.set_ylabel('Voltage (mV)')
+    # --- NEU: Textbox mit den Fit-Parametern oben links ---
+    r_normal = (fit_b1[0] + fit_b2[0]) / 2.0
+    textstr = '\n'.join((
+        r'$I_{c}^{+} = %.2f\,\mu\mathrm{A}$' % (I_pos_bot * 1e6, ),
+        r'$I_{c}^{-} = %.2f\,\mu\mathrm{A}$' % (I_neg_bot * 1e6, ),
+        r'$R_N = %.2f\,\Omega$' % (r_normal, ),
+        r'$V_{\mathrm{offset}} = %.3f\,\mathrm{mV}$' % (fit_plat[1] * 1e3, )
+    ))
+    props = dict(boxstyle='round,pad=0.5', facecolor='white', alpha=0.85, edgecolor='gray')
+    ax.text(0.03, 0.95, textstr, transform=ax.transAxes, fontsize=10,
+            verticalalignment='top', bbox=props)
+    # -----------------------------------------------------
+
+    ax.set_title(f'Josephson-Kennlinie & Fits: {filename}')
+    ax.set_xlabel('Strom $I$ (µA)')
+    ax.set_ylabel('Spannung $V$ (mV)')
     ax.grid(True, linestyle=':', alpha=0.6)
+    ax.legend(loc='lower right', fontsize=8, framealpha=0.9)
+    fig.tight_layout()
     
     os.makedirs("plots", exist_ok=True)
     plt.savefig(f"plots/fit_{filename.replace('.txt', '.png')}", dpi=200)
