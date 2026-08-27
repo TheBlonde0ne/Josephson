@@ -17,7 +17,7 @@ Dabei wurden die Magnetfeldstärken über \cref{eq:Spule} mit dem Verhältnis \(
     \label{fig:b-dependence-fit}
 \end{figure}
 
-Aus den Kennlinien wurde der jeweilige maximale Josephson-Strom bestimmt und gegen die Magnetfeldstärke aufgetragen. Ein repräsentativer Plot ist in \cref{fig:b-dependence} dargestellt. Die Auswertung der aufgenommenen Messkurven erfolgte durch numerische Bestimmung der lokalen Steigungsmaxima ($\mathrm{d}V/\mathrm{d}I$). Es wurden die Sprungbereiche bestimmt, die einzelnen Abschnitte separat linear gefittet und die kritischen Ströme $I_c^\pm$ als Schnittpunkte des supraleitenden Plateaus mit den jeweiligen Sprungflanken extrahiert (beispielhaft dargestellt in \cref{fig:b-dependence-fit}). Der Verlauf des Frauenhofer-Patterns wurde an die Ergebnisse gefittet (\cref{eq:fraunhofer}). Daraus ergaben sich die Fitparameter aus \cref{tab:josephson_fit_ergebnisse}.
+Aus den Kennlinien wurde der jeweilige maximale Josephson-Strom bestimmt und gegen die Magnetfeldstärke aufgetragen. Ein repräsentativer Plot ist in \cref{fig:b-dependence} dargestellt. Die Auswertung der aufgenommenen Messkurven erfolgte durch numerische Bestimmung der lokalen Steigungsmaxima ($\mathrm{d}V/\mathrm{d}I$). Es wurden die Sprungbereiche bestimmt, die einzelnen Abschnitte separat linear gefittet und die kritischen Ströme $I_c^\pm$ als Schnittpunkte des supraleitenden Plateaus mit den jeweiligen Sprungflanken extrahiert (beispielhaft dargestellt in \cref{fig:b-dependence-fit}). Der Verlauf des Frauenhofer-Patterns wurde an die Ergebnisse gefittet (\cref{eq:fraunhofer}) \cite{kittel, Thesis}. Daraus ergaben sich die Fitparameter aus \cref{tab:josephson_fit_ergebnisse}.
 
 Auffällig sind die vergrößerten Fehlerbalken des kritischen Stroms $I_c$ im Bereich um das Hauptmaximum ($B \approx \SI{0}{\milli\tesla}$). Dies lässt sich auf zwei Faktoren zurückführen:
 
@@ -57,13 +57,13 @@ Der aus dem Fit extrahierte maximale Josephson-Strom bei verschwindendem effekti
 Für das magnetische Feld-Offset ergibt sich ein Wert von $B_{\text{offset}} = (-5.2 \pm 13.7)\ \mu\text{T}$ (bzw. $-0.0052 \pm 0.0137\ \text{mT}$). Ein solches Feld-Offset resultiert physikalisch aus dem ungeschirmten Anteil des externen Erdmagnetfeldes (typischerweise im Bereich von $30\ \mu\text{T}$ bis $60\ \mu\text{T}$).
 Hierbei übersteigt die Unsicherheit den Wert des Offsets, sodass das Ergebnis mit einem Offset von null vereinbar ist.
 Die Periodizität der Oszillation, welche dem Durchtritt eines magnetischen Flussquants $\Phi_0$ durch die effektive Barrierefläche entspricht, beträgt $\Delta B = (1.0907 \pm 0.0191)\ \text{mT}$.
-Mit dem magnetischen Flussquant $\Phi_0 = \frac{h}{2e} \approx 2.0678 \times 10^{-15}\ \text{Vs}$ lässt sich die effektive Fläche des Josephson-Kontaktes berechnen:
+Mit dem magnetischen Flussquant $\Phi_0 = \frac{h}{2e} \approx 2.0678 \times 10^{-15}\ \text{Vs}$ lässt sich die effektive Barrierefläche \(A_{\text{eff}}\) des Josephson-Kontaktes berechnen \cite{kittel}:
 
 \begin{equation}
     A_{\text{eff}} = \frac{\Phi_0}{\Delta B} = (1.8959 \pm 0.0332)\ \mu\text{m}^2
 \end{equation}
 
-Des weiteren gilt der Zusammenhang zur Londonschen Eindringtiefe
+Unter Berücksichtigung der magnetischen Eindringtiefe in die beiden supraleitenden Elektroden setzt sich die effektive Fläche aus der Kontaktbreite $w$, der Barrierendicke $D$ und den Londonschen Eindringtiefen $\lambda_{L,1} = \lambda_{L,2} \equiv \lambda_L$ zusammen \cite{Thesis}:
 
 \begin{equation}
     A_{\text{eff}} = w \cdot (D + \lambda_{L,1} + \lambda_{L,2}) = w \cdot (D + 2 \lambda_{L})
@@ -73,14 +73,14 @@ wobei \(\lambda_{L,1} = \lambda_{L,2} = \lambda_{L} \). Mit den Probenabmessunge
 \begin{equation}
     \lambda_L = \frac{1}{2} \left( \frac{A_{\text{eff}}}{w} - D \right) = (79.79 \pm 1.66)\ \text{nm}
 \end{equation}
-Ein Literaturwert aus \cite{kittel} ist \(\lambda_{\text{Literatur}} = 39nm\). 
+Der theoretische Literaturwert für reines Niob liegt bei $\lambda_{L,\text{Lit}} \approx \SI{39}{\nano\meter}$ \cite{kittel}. Die Abweichung erklärt sich durch Verunreinigungen und reduzierte mittlere freie Weglängen in dünnen Dünnschichtfilmen (Dirty Limit) \cite{Thesis}.
 Die kritische Stromdichte $j_c$ normiert den maximalen Josephson-Strom auf die geometrische Kontaktfläche (mit $A_{\text{geo}} = w \cdot L = 100\ \mu\text{m}^2$):
 
 \begin{equation}
 j_c = \frac{I_0}{w \cdot L} = (5909.30 \pm 352.51)\ \text{A/cm}^2
 \end{equation}
 
-Aus $j_c$ und der magnetischen Dicke $d_{\text{mag}} = D + 2\lambda_L$ lässt sich die Josephson-Eindringtiefe $\lambda_J$ berechnen.
+Aus der kritischen Stromdichte $j_c$ und der magnetischen Dicke $d_{\text{mag}} = D + 2\lambda_L$ lässt sich die Josephson-Eindringtiefe $\lambda_J$ berechnen gemäß \cite{Thesis}:
 
 \begin{equation}
 \lambda_J = \sqrt{\frac{\Phi_0}{2\pi \mu_0 d_{\text{mag}} j_c}} = (48.35 \pm 1.50)\ \mu\text{m}
