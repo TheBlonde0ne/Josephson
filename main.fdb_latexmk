@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1787917747.81304 "main.bcf" "main.bbl" "main" 1787920449.60963 0
+["biber main"] 1787920550.62117 "main.bcf" "main.bbl" "main" 1787920951.94379 0
   "bibliography.bib" 1787915920 459 551c6899a163f4bcbf30bd9aed85240e ""
-  "main.bcf" 1787920449 109216 94fb4898b601d09457af3064cbd05aff "pdflatex"
+  "main.bcf" 1787920951 109216 94fb4898b601d09457af3064cbd05aff "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1787920446.68308 "c:/Users/miner/Documents/Uni/Master2/FP/Josephson/main.tex" "main.pdf" "main" 1787920449.61032 0
+["pdflatex"] 1787920948.93499 "c:/Users/miner/Documents/Uni/Master2/FP/Josephson/main.tex" "main.pdf" "main" 1787920951.94448 0
   "C:/Users/miner/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787917742 224594 ba74bb39cdef4b610a464c3ad818cac9 ""
   "C:/Users/miner/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1784870521 13367062 ad5dc84231d7f392b2c8d933f65f7686 ""
   "C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -203,12 +203,12 @@
   "Leonard/Temperatur.tex" 1787919171 3257 31f89ea74e1d26099816c874d5e25969 ""
   "c:/Users/miner/Documents/Uni/Master2/FP/Josephson/main.tex" 1787915920 645 ee899f4bceb69e6a14b9f59ed0bb13d8 ""
   "images/unistuttgart_logo_englisch.pdf" 1787915287 410769 83cfef7a49a4028e816490e33c3a5183 ""
-  "main.aux" 1787920449 11656 6f3316f3e67e3386a9588dfd9f33dc0c "pdflatex"
-  "main.bbl" 1787917857 4314 c70832618ac2bc85d079bdeab4cd4a36 "biber main"
-  "main.out" 1787920449 4864 fa51ae9701f055b1cd7793c5a109dc58 "pdflatex"
-  "main.run.xml" 1787920449 2343 05409ef3f87698ea7d261d91bd66dd6f "pdflatex"
+  "main.aux" 1787920951 11656 6f3316f3e67e3386a9588dfd9f33dc0c "pdflatex"
+  "main.bbl" 1787920554 4314 c70832618ac2bc85d079bdeab4cd4a36 "biber main"
+  "main.out" 1787920951 4864 fa51ae9701f055b1cd7793c5a109dc58 "pdflatex"
+  "main.run.xml" 1787920951 2343 05409ef3f87698ea7d261d91bd66dd6f "pdflatex"
   "main.tex" 1787915920 645 ee899f4bceb69e6a14b9f59ed0bb13d8 ""
-  "main.toc" 1787920449 2318 e7a595f686bdb4929dd7fdd9a524b1ee "pdflatex"
+  "main.toc" 1787920951 2318 e7a595f686bdb4929dd7fdd9a524b1ee "pdflatex"
   "measurements/eval_B/fraunhofer_fit.png" 1787915288 355913 a8dc083ea69c50699e13a336f1bd4b46 ""
   "measurements/eval_B/plots/fit_-0p5V.png" 1787915920 165690 d6c0ea0b95fb9c9269d16a5d14e6b4ea ""
   "measurements/eval_B/simple_curve.png" 1787915920 104210 cb60cc4bbbc50f1c11640ad2edacb8db ""
@@ -217,7 +217,7 @@
   "sections/execution.tex" 1787915920 2920 f12620252e976bda277aff6cf46a4a72 ""
   "sections/introduction.tex" 1787915920 1199 d8565d1cc274b0a7252b463d4730c36d ""
   "sections/results.tex" 1787915920 8754 bdb3e999025956dfd19a4be2d494d4dc ""
-  "sections/summary.tex" 1787920439 2247 b94bf90988165ac4b7fe97db507ea9c2 ""
+  "sections/summary.tex" 1787920948 2129 3138ad41334224f0e03345dfeacc83f6 ""
   "sections/theory.tex" 1787915920 12668 b6802fa37a8d61d3721c6c38dfa6da64 ""
   "titlepage.tex" 1787915920 634 3eb30fe7a8b0186f30964bcca7399985 ""
   (generated)
