@@ -1,6 +1,6 @@
-PWD c:\Users\miner\Documents\Uni\Master2\FP\Josephson
+PWD f:\Dokumente\Uni\8.Semester\FP\Josephson
 INPUT C:\Users\miner\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\miner\Documents\Uni\Master2\FP\Josephson\main.tex
+INPUT f:\Dokumente\Uni\8.Semester\FP\Josephson\main.tex
 OUTPUT main.log
 INPUT C:\Users\miner\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\miner\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
