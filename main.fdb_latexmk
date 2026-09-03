@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1787920550.62117 "main.bcf" "main.bbl" "main" 1787920951.94379 0
+["biber main"] 1787920550.62117 "main.bcf" "main.bbl" "main" 1788448271.74414 0
   "bibliography.bib" 1787915920 459 551c6899a163f4bcbf30bd9aed85240e ""
-  "main.bcf" 1787920951 109216 94fb4898b601d09457af3064cbd05aff "pdflatex"
+  "main.bcf" 1788448271 109216 94fb4898b601d09457af3064cbd05aff "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1787920948.93499 "c:/Users/miner/Documents/Uni/Master2/FP/Josephson/main.tex" "main.pdf" "main" 1787920951.94448 0
-  "C:/Users/miner/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787917742 224594 ba74bb39cdef4b610a464c3ad818cac9 ""
+["pdflatex"] 1788448266.99358 "c:/Users/miner/Documents/Uni/Master2/FP/Josephson/main.tex" "main.pdf" "main" 1788448271.74518 0
+  "C:/Users/miner/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1787921210 224594 ba74bb39cdef4b610a464c3ad818cac9 ""
   "C:/Users/miner/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1784870521 13367062 ad5dc84231d7f392b2c8d933f65f7686 ""
   "C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Users/miner/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc" 1256929440 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
@@ -195,20 +195,20 @@
   "C:/Users/miner/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/miner/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/miner/AppData/Local/Programs/MiKTeX/tex/latex/xfrac/xfrac.sty" 1718270407 14945 a207ee7fd6b8cf6d82afb367c583ddd3 ""
-  "Leonard/Plots/Delta.pdf" 1787916208 30570 d20bdb5a647b73a9dac3563c35bab893 ""
-  "Leonard/Plots/Ic.pdf" 1787916207 29312 7fe760c0e860b21d1129f01c63adbe43 ""
+  "Leonard/Plots/Delta.pdf" 1788448266 31977 598e57a64c82ac51a9015aca9c433494 ""
+  "Leonard/Plots/Ic.pdf" 1788448265 30660 4be8e576e631ab4205e747f20b1a9742 ""
   "Leonard/Plots/Shunt_fits_4p191K.pdf" 1787919171 40762 70fd46a1a05cac2dd71a066d2b06effe ""
-  "Leonard/Plots/example_curve.pdf" 1787916207 34186 bebbb031bfa8d17932406663d31117dd ""
+  "Leonard/Plots/example_curve.pdf" 1788447042 34186 ea30d74db6b05f3e0fa9e6c0bfafa8cf ""
   "Leonard/Shunt.tex" 1787920439 3245 7e62ade98890097ee35844c87bbd8752 ""
-  "Leonard/Temperatur.tex" 1787919171 3257 31f89ea74e1d26099816c874d5e25969 ""
+  "Leonard/Temperatur.tex" 1788446624 3339 d7a669b49523442d739d9ecfe52f487a ""
   "c:/Users/miner/Documents/Uni/Master2/FP/Josephson/main.tex" 1787915920 645 ee899f4bceb69e6a14b9f59ed0bb13d8 ""
   "images/unistuttgart_logo_englisch.pdf" 1787915287 410769 83cfef7a49a4028e816490e33c3a5183 ""
-  "main.aux" 1787920951 11656 6f3316f3e67e3386a9588dfd9f33dc0c "pdflatex"
+  "main.aux" 1788448271 11656 6f3316f3e67e3386a9588dfd9f33dc0c "pdflatex"
   "main.bbl" 1787920554 4314 c70832618ac2bc85d079bdeab4cd4a36 "biber main"
-  "main.out" 1787920951 4864 fa51ae9701f055b1cd7793c5a109dc58 "pdflatex"
-  "main.run.xml" 1787920951 2343 05409ef3f87698ea7d261d91bd66dd6f "pdflatex"
+  "main.out" 1788448271 4864 fa51ae9701f055b1cd7793c5a109dc58 "pdflatex"
+  "main.run.xml" 1788448271 2343 05409ef3f87698ea7d261d91bd66dd6f "pdflatex"
   "main.tex" 1787915920 645 ee899f4bceb69e6a14b9f59ed0bb13d8 ""
-  "main.toc" 1787920951 2318 e7a595f686bdb4929dd7fdd9a524b1ee "pdflatex"
+  "main.toc" 1788448271 2318 e7a595f686bdb4929dd7fdd9a524b1ee "pdflatex"
   "measurements/eval_B/fraunhofer_fit.png" 1787915288 355913 a8dc083ea69c50699e13a336f1bd4b46 ""
   "measurements/eval_B/plots/fit_-0p5V.png" 1787915920 165690 d6c0ea0b95fb9c9269d16a5d14e6b4ea ""
   "measurements/eval_B/simple_curve.png" 1787915920 104210 cb60cc4bbbc50f1c11640ad2edacb8db ""
